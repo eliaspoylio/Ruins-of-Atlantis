@@ -32,7 +32,7 @@ Wednesday / Day 5
 - Changing levels with SceneManager.
 
 **TODO**
-Make walls fade to dark after a while
-Oxygen counter and UI-bar
-Some background sprites for UI elements
-“Currents” to hint shorter routes to goal
+- Make walls fade to dark after a while
+- Oxygen counter and UI-bar
+- Some background sprites for UI elements
+- “Currents” to hint shorter routes to goal
