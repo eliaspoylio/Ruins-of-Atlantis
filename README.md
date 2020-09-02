@@ -30,7 +30,8 @@ Tuesday / Day 4
 Wednesday / Day 5
 - Making a repository to GitHub
 - Changing levels with SceneManager.
-![](Peek 2020-09-02 22-41.gif)
+
+![](2020-09-02-22-41.gif)
 
 **TODO**
 - Make walls fade to dark after a while
