@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
 
   public float min_Y, max_Y, min_X, max_X;
 
-  public float attackTimer = 0.01f;
+  private float attackTimer = 0.01f;
   private float currentAttackTimer;
   private bool canAttack;
   public int bulletStash;
@@ -41,6 +41,7 @@ public class PlayerController : MonoBehaviour
       float x = Input.GetAxisRaw("Horizontal");
       float y = Input.GetAxisRaw("Vertical");
       moveDelta = new Vector3(speed*x,speed*y,0);
+      Vector3 playerScale = transform.localScale;
 
       hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(0,moveDelta.y), Mathf.Abs(moveDelta.y * Time.deltaTime), LayerMask.GetMask("Wall"));
       if (hit.collider == null)
@@ -54,59 +55,45 @@ public class PlayerController : MonoBehaviour
         transform.Translate(moveDelta.x * Time.deltaTime, 0, 0);
       }
 
-/*
+
       if(Input.GetAxisRaw("Vertical") > 0f)
       {
+        /*
         //transform.position ei ole muuttuja, siksi temp
         Vector3 temp = transform.position;
         temp.y += speed * Time.deltaTime;
-
-        hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(0,moveDelta.y), Mathf.Abs(moveDelta.y * Time.deltaTime), LayerMask.GetMask("Wall"));
-        if (hit.collider == null)
-        {
-          transform.position = temp;
-        }
-
+        */
+        playerScale.y = 10;
 
       }
       else if (Input.GetAxisRaw("Vertical") < 0f)
       {
+        /*
         Vector3 temp = transform.position;
         temp.y -= speed * Time.deltaTime;
-
-        hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(0,moveDelta.y), Mathf.Abs(moveDelta.y * Time.deltaTime), LayerMask.GetMask("Wall"));
-        if (hit.collider == null)
-        {
-          transform.position = temp;
-        }
+        */
+        playerScale.y = -10;
       }
 
       if(Input.GetAxisRaw("Horizontal") > 0f)
       {
+        /*
         //transform.position ei ole muuttuja, siksi temp
         Vector3 temp = transform.position;
         temp.x += speed * Time.deltaTime;
-
-
-        hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(0,moveDelta.x), Mathf.Abs(moveDelta.x * Time.deltaTime), LayerMask.GetMask("Wall"));
-        if (hit.collider == null)
-        {
-          transform.position = temp;
-        }
+        */
+        playerScale.x = 10;
       }
 
       else if (Input.GetAxisRaw("Horizontal") < 0f)
       {
+        /*
         Vector3 temp = transform.position;
         temp.x -= speed * Time.deltaTime;
-
-        hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(0,moveDelta.x), Mathf.Abs(moveDelta.x * Time.deltaTime), LayerMask.GetMask("Wall"));
-        if (hit.collider == null)
-        {
-          transform.position = temp;
-        }
+        */
+        playerScale.x = -10;
       }
-*/
+
     }
 
     void Shoot(){

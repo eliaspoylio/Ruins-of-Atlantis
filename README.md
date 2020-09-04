@@ -11,6 +11,7 @@ Sunday / Day2
 - Flare collisions with walls
 - Animation for wall’s appearance
 - Prefab brush for walls (link?)
+![](2020-08-30-23-29.gif)
 
 Monday / Day 3
 - Boxcast
@@ -31,10 +32,20 @@ Wednesday / Day 5
 - Making a repository to GitHub
 - Changing levels with SceneManager.
 
+Thursday / Day 6
+- Other stuff to do...
+
+Friday / Day 7
+- Flare & Player sprites
+- Oxygenmeter (I wish I could have made this "pixel perfect" but I guess time is running out)
+
 ![](2020-09-02-22-41.gif)
 
 **TODO**
+- fix winning by shooting the goal
 - Make walls fade to dark after a while
 - Oxygen counter and UI-bar
 - Some background sprites for UI elements
 - “Currents” to hint shorter routes to goal
+- Sound effects for shooting and hitting
+-
