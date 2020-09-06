@@ -2,7 +2,12 @@
 
 Made for GBJAM8. My first game jam entry ever.
 
-
+**TODO**
+- Make walls fade to dark after a while
+- Some background sprites for UI elements
+- “Currents” to hint shorter routes to goal
+- Sound effects for shooting and hitting
+- Traps & enemies
 
 Some notes form my progress:
 

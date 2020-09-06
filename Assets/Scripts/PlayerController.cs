@@ -8,8 +8,6 @@ public class PlayerController : MonoBehaviour
 {
   public float speed;
 
-  public float min_Y, max_Y, min_X, max_X;
-
   private float attackTimer = 0.01f;
   private float currentAttackTimer;
   private bool canAttack;
@@ -27,6 +25,7 @@ public class PlayerController : MonoBehaviour
     {
       currentAttackTimer = attackTimer;
       boxCollider = GetComponent<BoxCollider2D>();
+      bulletText.text = bulletStash.ToString();
     }
 
     // Update is called once per frame
