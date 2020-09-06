@@ -1,5 +1,9 @@
 # ruins-of-atlantis
 
+Made for GBJAM8. My first game jam entry ever.
+
+
+
 Some notes form my progress:
 
 Saturday / Day 1
@@ -11,6 +15,7 @@ Sunday / Day2
 - Flare collisions with walls
 - Animation for wall’s appearance
 - Prefab brush for walls (link?)
+
 ![](2020-08-30-23-29.gif)
 
 Monday / Day 3
@@ -32,20 +37,27 @@ Wednesday / Day 5
 - Making a repository to GitHub
 - Changing levels with SceneManager.
 
+![](2020-09-02-22-41.gif)
+
 Thursday / Day 6
 - Other stuff to do...
 
 Friday / Day 7
 - Flare & Player sprites
-- Oxygenmeter (I wish I could have made this "pixel perfect" but I guess time is running out)
+- Oxygen bar (I wish I could have made this "pixel perfect" but I guess time is running out)
 
-![](2020-09-02-22-41.gif)
+Saturday / Day 8
+- Goal can be reached only by player and shooting it makes it visible and animated
+- Level2
+
+Sunday / Day 9
+- Level 3
+- Win/Lose screens and SceneManager to operate them
+- First attempts for WebGL builds and canvas sizes. Have to settle with least bad option...
+
 
 **TODO**
-- fix winning by shooting the goal
 - Make walls fade to dark after a while
-- Oxygen counter and UI-bar
 - Some background sprites for UI elements
 - “Currents” to hint shorter routes to goal
 - Sound effects for shooting and hitting
--

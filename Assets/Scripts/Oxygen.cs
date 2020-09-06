@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Oxygen : MonoBehaviour
 {
     Image oxygenBar;
     public float maxOxygen;
     float oxygenLeft;
-    public GameObject Death;
+
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +29,8 @@ public class Oxygen : MonoBehaviour
         else
         {
             // game over
-            Time.timeScale = 0;
+            //Time.timeScale = 0;
+            SceneManager.LoadScene(4);
         }
     }
 }
