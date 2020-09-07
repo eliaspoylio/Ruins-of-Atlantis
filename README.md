@@ -2,6 +2,8 @@
 
 Made for GBJAM8. My first game jam entry ever.
 
+https://eliaspoylio.itch.io/ruins-of-atlantis
+
 **TODO**
 - Make walls fade to dark after a while
 - Some background sprites for UI elements
